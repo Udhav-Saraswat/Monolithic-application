@@ -1,11 +1,8 @@
-# AngularJS and Spring Boot version of the Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-angularjs.svg?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-angularjs/)
+# AngularJS and Spring Boot version of the Spring PetClinic Sample Application 
 
-## Understanding the Spring Petclinic application with a few diagrams
-[See the presentation here](http://fr.slideshare.net/AntoineRey/spring-framework-petclinic-sample-application)
 
 ## Running petclinic locally
 ```
-git clone https://github.com/spring-petclinic/spring-petclinic-angularjs.git
 cd spring-petclinic-angularjs
 ./mvnw clean install
 cd spring-petclinic-server
@@ -13,11 +10,6 @@ cd spring-petclinic-server
 ```
 
 You can then access petclinic here: http://localhost:8080/
-
-<img width="782" alt="spring-petclinic" src="https://cloud.githubusercontent.com/assets/838318/19653851/61c1986a-9a16-11e6-8b94-03fd7f775bb3.png">
-
-## In case you find a bug/suggested improvement for Spring Petclinic
-Our issue tracker is available here: https://github.com/spring-petclinic/spring-petclinic-angularjs/issues
 
 ## Database configuration
 
@@ -101,11 +93,6 @@ If m2e is not there, just follow the install process here: http://eclipse.org/m2
 
 ### Steps:
 
-1) In the command line
-```
-git clone https://github.com/spring-projects/spring-petclinic.git
-```
-2) Inside Eclipse
 ```
 File -> Import -> Maven -> Existing Maven project
 ```
@@ -117,12 +104,10 @@ Just add the following VM option:
 ```
 -Dspring.profiles.active=dev
 ```
-All static resources changes will be monitored by the embedded LiveReload server of Spring Boot Devtools.
-See [application-dev.properties](spring-petclinic-server/src/main/resources/application-dev.properties) for details.
+
 
 ## Client-side Architecture
 
-Compared to the [standard Petclinic based on JSP pages](https://github.com/spring-projects/spring-petclinic), 
 this SpringBoot AngularJS Petclinic is splitted in 2 modules - a client module and a server module:
 * spring-petclinic-client : static resources (images, fonts, style, angular JS code) packaged as a webjar.
 * spring-petclinic-server : Spring MVC REST API and an index.html template
@@ -148,19 +133,4 @@ this SpringBoot AngularJS Petclinic is splitted in 2 modules - a client module a
 | Angular JS        | [app.js, controllers and templates](spring-petclinic-client/src/scripts/)  |
 
 
-## Interesting Spring Petclinic forks
-
-The Spring Petclinic master branch in the main [spring-projects](https://github.com/spring-projects/spring-petclinic)
-GitHub org is the "canonical" implementation, currently based on Spring Boot and Thymeleaf.
-
-This [spring-petclinic-angularjs][] project is one of the [several forks](https://spring-petclinic.github.io/docs/forks.html) 
-hosted in a special GitHub org: [spring-petclinic](https://github.com/spring-petclinic).
-If you have a special interest in a different technology stack
-that could be used to implement the Pet Clinic then please join the community there.
-
-# Contributing
-
-The [issue tracker](https://github.com/spring-petclinic/spring-petclinic-angularjs/issues) is the preferred channel for bug reports, features requests and submitting pull requests.
-
-For pull requests, editor preferences are available in the [editor config](https://github.com/spring-projects/spring-petclinic/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
